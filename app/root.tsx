@@ -12,6 +12,7 @@ import ProductPage from "./hooks/useCallback/example1/ProductPage";
 // import ChatRoom from "./hooks/useCallback/example2/ChatRoom";
 // import ChatRoom from "./hooks/useCallback/example2/ChatRoom-optimization-1";
 import ChatRoom from "./hooks/useCallback/example2/ChatRoom-optimization-2";
+import ComWithContext from "./hooks/useContext/example1/ComWithContext";
 
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
@@ -33,6 +34,7 @@ export default function App() {
         <LiveReload />
         <ProductPage />
         <ChatRoom />
+        <ComWithContext />
       </body>
     </html>
   );
