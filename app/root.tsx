@@ -8,6 +8,10 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import ProductPage from "./hooks/useCallback/example1/ProductPage";
+// import ChatRoom from "./hooks/useCallback/example2/ChatRoom";
+// import ChatRoom from "./hooks/useCallback/example2/ChatRoom-optimization-1";
+import ChatRoom from "./hooks/useCallback/example2/ChatRoom-optimization-2";
 
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
@@ -27,6 +31,8 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <ProductPage />
+        <ChatRoom />
       </body>
     </html>
   );
