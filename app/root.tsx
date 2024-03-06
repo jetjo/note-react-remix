@@ -13,6 +13,7 @@ import ProductPage from "./hooks/useCallback/example1/ProductPage";
 // import ChatRoom from "./hooks/useCallback/example2/ChatRoom-optimization-1";
 import ChatRoom from "./hooks/useCallback/example2/ChatRoom-optimization-2";
 import ComWithContext from "./hooks/useContext/example1/ComWithContext";
+import Task from "./hooks/useContext/example2/Task";
 
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
@@ -35,6 +36,7 @@ export default function App() {
         <ProductPage />
         <ChatRoom />
         <ComWithContext />
+        <Task />
       </body>
     </html>
   );
